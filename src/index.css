@@ -11,3 +11,597 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+h1 {
+  font-size: 2.875em;
+}
+
+p {
+  font-size: 1em;
+}
+
+/* ----------------- Nav bar ----------------- */
+header {
+  position: fixed;
+  z-index: 1;
+  background-color: white;
+  width: -webkit-fill-available;
+}
+
+nav ul {
+  list-style-type: none;
+  margin-top: 10;
+  padding: 0;
+}
+
+nav li {
+  float: left;
+  margin-left: 2rem;
+  list-style-type: none;
+}
+
+nav li a {
+  font-size: 16px;
+}
+
+.flex {
+  display: flex;
+}
+
+.navbar-input {
+  width: 420px;
+  height: 36px;
+  border-radius: 25px;
+  border: none;
+  background-color: #DCDCDC;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.input-box {
+  position: relative;
+}
+
+.search-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  width: 97%;
+  margin-top: 5px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  color: Black;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 0.875rem;
+}
+.search-content p{
+  margin-left: 10px;
+}
+.search-types{
+  margin: 30px 0;
+}
+.search-topics{
+    border: 1px solid grey;
+    height: 35px;
+    border-radius: 5px;
+    color: grey;
+    margin-left: 10px;
+}
+.search-topics a{
+    margin: 10px 10px;
+}
+.img-btn{
+  background: url("./images/photo-grid-4.jpg");
+  height: 35px;
+  width: 35px;
+  background-position: center;
+
+}
+.search-types span{
+  color: grey;
+  margin-left: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.search-btn {
+  padding: 10px 20px;
+  background: white;
+  border: 1px solid grey;
+  border-radius: 5px;
+  margin: 0px 10px;
+  color: grey;
+  cursor: pointer;
+}
+
+.search-icon {
+  position: absolute;
+  left: 12px;
+  top: 10px;
+}
+
+.visual-icon {
+  position: absolute;
+  right: 12px;
+  top: 10px;
+}
+
+.vl {
+  border-left: solid 1px #d1d1d1;
+  height: 32px;
+  padding-left: 20px;
+}
+
+.top-margin-10 {
+  margin-top: 0.625rem;
+}
+
+.btn {
+  background-color: #ffffff;
+  padding: 0.6rem;
+  border-radius: 5px;
+  border: 1px solid #DCDCDC;
+}
+
+.btn-menu {
+  background-color: #ffffff;
+  border: none;
+  cursor: pointer;
+}
+
+.topbar ul {
+  display: flex;
+  list-style-type: none;
+  float: left;
+  overflow: hidden;
+  padding: 0;
+  width: 1207px;
+}
+
+.topbar li {
+  float: left;
+}
+
+.clear-float {
+  clear: left;
+}
+
+.top-bar-links {
+  margin: 0 10px;
+  padding: 20px 0;
+}
+
+.active {
+  border-bottom: 2px solid black;
+}
+.dropdown {
+  float: right;
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #ffffff;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  width: 40.625rem;
+}
+.dropdown-content span{
+  margin-right: 10px;
+}
+
+.dropdown-content a {
+  color: grey;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+}
+
+.dropdown-content-flex {
+  display: flex;
+  padding: 30px;
+}
+
+.dropdown-content-flex li {
+  margin-left: 15px;
+  clear: left;
+}
+.dropdown-bottomBar{
+  justify-content: space-between;
+}
+.dropdown-bottom-bar li{
+  margin-left: 0;
+}
+.social-icons{
+  margin-right: 10px;
+}
+.social-icons li{
+  margin-top:10px;
+  margin-right: 10px;
+}
+/* ---------------- imgae section --------------------- */
+.image {
+  background-image: url("./images/photo.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 475px;
+  position: relative;
+  padding-top: 240px;
+}
+
+.image-content {
+  position: absolute;
+  top: 31%;
+  left: 20%;
+  color: white;
+}
+
+.image-content p {
+  font-size: 1.2rem;
+  line-height: 0.6;
+}
+
+.unsplash-input {
+  width: 680px;
+  height: 52px;
+  border-radius: 5px;
+  border: none;
+  background-color: #ffffff;
+  padding-left: 50px;
+  padding-right: 50px;
+  font-size: 1rem;
+}
+
+.unsplash-icon {
+  color: grey;
+  top: 18px;
+}
+
+.credits {
+  position: absolute;
+  bottom: 0%;
+  left: 1%;
+  color: #ffffff;
+}
+
+.read-more {
+  position: absolute;
+  bottom: 0;
+  left: 43%;
+  color: #ffffff;
+}
+
+.square-space {
+  position: absolute;
+  right: 20px;
+  bottom: 0;
+  color: #ffffff;
+  text-align: end;
+}
+
+/* ------- awards section ------------- */
+.awards {
+  margin: 1.3rem;
+  background: #111;
+  padding: 1.5em;
+  text-align: center;
+  color: #ffffff;
+}
+
+.awards p {
+  color: #767676;
+}
+
+/* --------------- imagees section css -------------- */
+.img-card {
+  padding: 0.5rem;
+  width: -webkit-fill-available;
+}
+
+.flex-images {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-col {
+  max-width: 32%;
+  margin: 0.7rem;
+}
+
+.show {
+  display: block;
+}
+
+.btn-menu:hover, .btn-menu:focus {
+  background-color: #2980B9;
+}
+
+
+
+/* ------------------------------------Login Model------------------------  */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  font-size: 14px;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.login-layout {
+  width: 70%;
+  margin: auto;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.login-facebook-btn {
+  padding: 10px 150px;
+  background-color: #5890FF;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.login-submit-btn {
+  padding: 10px 150px;
+  background-color: Black;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  margin: 20px 0;
+  width: 100%;
+  cursor: pointer;
+}
+.iconFb {
+  margin-right: 15px;
+}
+
+.login-model-form a {
+  font-size: 12px;
+  text-decoration: underline;
+  color: #909090;
+}
+/* ----------------Login Model End Here---------------- */
+
+/* ----------------sign up page---------------- */
+.sign-up-flex {
+  display: flex;
+}
+
+.side-img {
+  /* background-image: url("../images/screenimage.jpg"); */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(34, 34, 34, 0.5)), url("./images/screenimage.JPG");
+  background-position: bottom;
+  width: 45%;
+  position: relative;
+  padding-top: 240px;
+  flex: 30%;
+}
+
+.side-img-content {
+  color: white;
+  padding: 40px;
+}
+
+.sign-up {
+  text-align: center;
+  flex: 55%;
+  max-width: 75%;
+}
+
+.form-div {
+  width: 80%;
+  margin: auto;
+}
+
+.flex-form {
+  display: flex;
+  flex-direction: column;
+  margin: 50px 0;
+}
+
+.flex-form label {
+  display: block;
+  text-align: left;
+  padding-left: 10px;
+}
+
+.flex-form input {
+  width: 96%;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid;
+  margin: 10px 0;
+}
+
+.flex-form input[type=submit] {
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  margin: 20px 0;
+  padding: 10px 0;
+  height: 40px;
+  cursor: pointer;
+}
+
+.user-name {
+  flex: 50%;
+  max-width: 48%;
+}
+
+.justify-Content-around {
+  justify-content: space-around;
+}
+
+
+#loginModal input {
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  border: 1px solid;
+  margin: 10px 0;
+}
+
+#loginModal input[type=submit] {
+  padding: 10px 150px;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  margin: 20px 0;
+}
+
+#loginModal label {
+  display: block;
+  text-align: left;
+  margin-top: 15px;
+}
+
+
+
+
+/* --------------------------------------------------- */
+/* -----------media query starts here  -------------*/
+/* --------------------------------------------------- */
+@media (max-width: 776px) {
+  .image {
+    width: 995px;
+  }
+
+  .unsplash-input {
+    width:
+  }
+
+  .read-more {
+    display: none;
+  }
+
+  .awards {
+    width: 902px;
+  }
+
+  .flex-images {
+    width: 992px;
+    flex-wrap: wrap;
+  }
+
+  .flex-col {
+    max-width: 47% !important;
+  }
+}
+
+/*------------- MEDIA QURIES  screen 992px------------- */
+@media screen and (max-width: 992px) {
+
+  /* body{
+    font-size: 14px;
+  } */
+  nav li {
+    margin-left: 1.7rem;
+  }
+
+  .navbar-input {
+    width: 250px;
+  }
+
+  .logo {
+    width: 45px;
+  }
+
+  .overflow {
+    display: none;
+  }
+
+  .unsplash-input {
+    width: 590px;
+  }
+
+  .image-content {
+    top: 20%;
+    left: 16%;
+  }
+
+  .read-more {
+    left: 43%;
+  }
+
+  .flex-col {
+    max-width: 31%;
+    margin: 0.7rem;
+  }
+
+  .sign-up-flex {
+    flex-direction: column;
+  }
+
+  .side-img {
+    width: 100%;
+    height: 30%;
+    padding: 0;
+    background-position: center;
+  }
+
+  .sign-up {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .user-name {
+    flex: 50%;
+    max-width: 48%;
+  }
+}
+
+/* --------------------------------------------------- */
+/* -----------media query ends here  -------------*/
+/* --------------------------------------------------- */
